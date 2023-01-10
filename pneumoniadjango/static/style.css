@@ -5,8 +5,9 @@
 }
 body{
     font-family: 'Inter Tight', sans-serif;
-    background-color:#F5E7DA ;
+    background: linear-gradient(45deg, #FFEDBC 70%, #ED4264); 
     color:white;
+    height: 100vh;
 }
 .shadow{
     box-shadow: rgb(139, 0, 16) 0px 10px 50px;

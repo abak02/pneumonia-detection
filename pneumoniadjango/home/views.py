@@ -10,17 +10,18 @@ import os
 def hotel_image_view(request):
  
     if request.method == 'POST':
-        form = HotelForm(request.POST, request.FILES)
+        form = Form(request.POST, request.FILES)
  
         if form.is_valid():
             form.save()
             #os.system('cmd/c "conda activate tf"')
             import test
             return render(request, 'result.html',{'output':test.result})
+            
           #  return HttpResponse('successfully uploaded')
             #return redirect('success')
     else:
-        form = HotelForm()
+        form = Form()
     return render(request, 'index.html', {'form': form})
  
  
