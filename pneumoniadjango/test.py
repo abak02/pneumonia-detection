@@ -31,6 +31,7 @@ else:
     result = 'Person is affected with Pneumonia!'
 try:
     os.remove(file)
+
 except:pass
 
-print(f'Predictions: {prediction}')
+print(f'Predictions: {prediction}') 
